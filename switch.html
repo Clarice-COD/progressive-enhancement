@@ -12,6 +12,27 @@
 			/* Hint: Dit component kun je volledig met HTML en CSS bouwen */
 
 			/* Hint: Hoe ver ga je qua styling? Vraag jezelf dit altijd af */
+			input {
+				position: absolute;
+				display: inline-block;
+				width: 34px;
+				height: 34px;
+				left: 1px;
+				border-radius: 2rem;
+				content: "aan";
+			}
+
+			input:checked {
+				left: 58px;
+			}
+
+			div {
+				position: relative;
+				background-color: rgb(135, 135, 135);
+				width: 100px;
+				height: 45px;
+				border-radius: 2rem;
+			}
 		</style>
 	</head>
 	<body>
@@ -20,10 +41,9 @@
 		<!-- Hint: Safari heeft hiervoor iets bedacht, maar is dat al een standaard?
 		     Wat gebeurt er in browsers die dat nog niet ondersteunen? -->
 
-			 <label for="">
+			 <div>
 				<input type="checkbox">
-				<span></span>
-			 </label>
+			</div>
 
 		<details open>
 			<summary>Demo video</summary>
